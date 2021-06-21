@@ -56,7 +56,7 @@
               "src/styles.scss"
             ],
             "scripts": []
-          },
+					},
           "configurations": {
             "production": {
               "budgets": [
@@ -92,7 +92,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
+					"configurations": {
             "production": {
               "browserTarget": "angular-i18n-sandbox:build:production"
             },
@@ -108,8 +108,24 @@
             "browserTarget": "angular-i18n-sandbox:build"
           }
         }
-      }
-    }
+      },
+			"i18n": {
+				"sourceLocale": {
+					"code": "en-US",
+					"baseHref": ""
+				},
+				"locales": {
+					"lv": {
+						"translation": "src/locale/messages.lv.xlf",
+						"baseHref": ""
+					},
+					"zh-Hans": {
+						"translation": "src/locale/messages.zh-Hans.xlf",
+						"baseHref": ""
+					}
+				}
+			}
+		}
   },
   "defaultProject": "angular-i18n-sandbox"
 }
