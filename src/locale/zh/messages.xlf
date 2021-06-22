@@ -20,6 +20,24 @@
         <note priority="1" from="description">Navigation section sub-header on home page</note>
         <target state="final">以下是一些帮助您启动的链接：</target>
       </trans-unit>
+      <trans-unit id="5474830355021798286" datatype="html" approved="yes">
+        <source>CLI Documentation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">370</context>
+        </context-group>
+        <note priority="1" from="description">Documentation section header</note>
+        <target state="final">CLI 文件</target>
+      </trans-unit>
+      <trans-unit id="2869948436884924902" datatype="html">
+        <source>Next Steps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+        <note priority="1" from="description">Next steps section header</note>
+        <target state="needs-translation">Next Steps</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
