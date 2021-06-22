@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --localize",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+		"extract-i18n": "ng extract-i18n --output-path=src/locale"
   },
   "private": true,
   "dependencies": {

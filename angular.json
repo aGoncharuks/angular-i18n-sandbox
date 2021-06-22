@@ -116,11 +116,11 @@
 				},
 				"locales": {
 					"lv": {
-						"translation": "src/locale/messages.lv.xlf",
+						"translation": "src/locale/lv/messages.xlf",
 						"baseHref": ""
 					},
 					"zh-Hans": {
-						"translation": "src/locale/messages.zh.xlf",
+						"translation": "src/locale/zh/messages.xlf",
 						"baseHref": ""
 					}
 				}
