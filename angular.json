@@ -120,7 +120,7 @@
 						"baseHref": ""
 					},
 					"zh-Hans": {
-						"translation": "src/locale/messages.zh-Hans.xlf",
+						"translation": "src/locale/messages.zh.xlf",
 						"baseHref": ""
 					}
 				}
