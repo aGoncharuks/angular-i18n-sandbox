@@ -1,0 +1,15 @@
+:host {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.language-select {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
