@@ -6,9 +6,9 @@
         <note category="location">src/app/app.component.html:15</note>
         <note category="description">Simple text example</note>
       </notes>
-      <segment state="initial">
+      <segment state="final">
         <source>This is an example of simple text</source>
-        <target>This is an example of simple text</target>
+        <target>这是一个简单文本的例子</target>
       </segment>
     </unit>
     <unit id="4606963464835766483">
