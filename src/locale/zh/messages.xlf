@@ -1,43 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="zh-CN">
-    <body>
-      <trans-unit id="2446117790692479672" datatype="html" approved="yes">
-        <source>Resources</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">356</context>
-        </context-group>
-        <note priority="1" from="description">Navigation section header on home page</note>
-        <target state="final">资源</target>
-      </trans-unit>
-      <trans-unit id="4274046789977098738" datatype="html" approved="yes">
-        <source>Here are some links to help you get started:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">357</context>
-        </context-group>
-        <note priority="1" from="description">Navigation section sub-header on home page</note>
-        <target state="final">以下是一些帮助您启动的链接：</target>
-      </trans-unit>
-      <trans-unit id="5474830355021798286" datatype="html" approved="yes">
-        <source>CLI Documentation</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">370</context>
-        </context-group>
-        <note priority="1" from="description">Documentation section header</note>
-        <target state="final">CLI 文件</target>
-      </trans-unit>
-      <trans-unit id="2869948436884924902" datatype="html" approved="yes">
-        <source>Next Steps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">386</context>
-        </context-group>
-        <note priority="1" from="description">Next steps section header</note>
-        <target state="final">以后的步骤</target>
-      </trans-unit>
-    </body>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US">
+  <file id="ngi18n" original="ng.template" target-language="zh-CN">
+    <unit id="7542152339795391976">
+      <notes>
+        <note category="location">src/app/app.component.html:15</note>
+        <note category="description">Simple text example</note>
+      </notes>
+      <segment>
+        <source>This is an example of simple text</source>
+      </segment>
+    </unit>
+    <unit id="4606963464835766483">
+      <notes>
+        <note category="location">src/app/app.component.html:25,26</note>
+        <note category="description">Info about last updated time</note>
+      </notes>
+      <segment>
+        <source>Updated <ph id="0" equiv="ICU" disp="{minutes, plural, =0 {just now} =1 {one minute ago} other      {{{minutes}} minutes ago}}"/></source>
+      </segment>
+    </unit>
+    <unit id="2002272803511843863">
+      <notes>
+        <note category="location">src/app/app.component.html:25,26</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago}}</source>
+      </segment>
+    </unit>
+    <unit id="5407546478523663407">
+      <notes>
+        <note category="location">src/app/app.component.html:37</note>
+        <note category="description">Info about author</note>
+      </notes>
+      <segment>
+        <source>The author is <ph id="0" equiv="ICU" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="1" equiv="INTERPOLATION" disp="{{name}}"/></source>
+      </segment>
+    </unit>
+    <unit id="2955832262925887316">
+      <notes>
+        <note category="location">src/app/app.component.html:37</note>
+        <note category="location">src/app/app.component.html:46</note>
+      </notes>
+      <segment>
+        <source>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</source>
+      </segment>
+    </unit>
+    <unit id="6984380855335682859">
+      <notes>
+        <note category="location">src/app/app.component.html:43,47</note>
+        <note category="description">Info about last updated time and author</note>
+      </notes>
+      <segment>
+        <source>Updated: <ph id="0" equiv="ICU" disp="{minutes, plural,     =0 {just now}     =1 {one minute ago}     other {{{minutes}} minutes ago }}"/> by <ph id="1" equiv="ICU_1" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="2" equiv="INTERPOLATION_1" disp="{{name}}"/> </source>
+      </segment>
+    </unit>
+    <unit id="5427460296173081035">
+      <notes>
+        <note category="location">src/app/app.component.html:43,46</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago }}</source>
+      </segment>
+    </unit>
+    <unit id="2845920688654430205">
+      <notes>
+        <note category="location">src/app/app.component.html:54</note>
+        <note category="description">Image title</note>
+      </notes>
+      <segment>
+        <source>Image with attributes</source>
+      </segment>
+    </unit>
   </file>
 </xliff>
