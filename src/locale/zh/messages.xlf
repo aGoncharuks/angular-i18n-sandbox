@@ -74,9 +74,9 @@
         <note category="location">src/app/app.component.html:54</note>
         <note category="description">Image title</note>
       </notes>
-      <segment state="initial">
+      <segment state="translated">
         <source>Image with attributes</source>
-        <target>Image with attributes</target>
+        <target>带属性的图像</target>
       </segment>
     </unit>
   </file>
