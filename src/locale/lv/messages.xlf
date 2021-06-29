@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US">
-  <file id="ngi18n" original="ng.template" target-language="lv">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="lv">
+  <file id="ngi18n" original="ng.template">
     <unit id="7542152339795391976">
       <notes>
         <note category="location">src/app/app.component.html:15</note>
         <note category="description">Simple text example</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>This is an example of simple text</source>
+        <target>Tas ir parasta teksta piemērs</target>
       </segment>
     </unit>
     <unit id="4606963464835766483">
@@ -15,16 +16,18 @@
         <note category="location">src/app/app.component.html:25,26</note>
         <note category="description">Info about last updated time</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>Updated <ph id="0" equiv="ICU" disp="{minutes, plural, =0 {just now} =1 {one minute ago} other      {{{minutes}} minutes ago}}"/></source>
+        <target>Atjaunots<ph id="0" equiv="ICU" disp="{minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago}}"/></target>
       </segment>
     </unit>
     <unit id="2002272803511843863">
       <notes>
         <note category="location">src/app/app.component.html:25,26</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago}}</source>
+        <target>{VAR_PLURAL, plural, zero {} one {<ph id="0" equiv="INTERPOLATION"/> minutes ago} =0 {tikko} =1 {vienu minuti atpakaļ} other {<ph id="0" equiv="INTERPOLATION"/> minutes atpakaļ}}</target>
       </segment>
     </unit>
     <unit id="5407546478523663407">
@@ -32,8 +35,9 @@
         <note category="location">src/app/app.component.html:37</note>
         <note category="description">Info about author</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>The author is <ph id="0" equiv="ICU" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="1" equiv="INTERPOLATION" disp="{{name}}"/></source>
+        <target>Autors ir <ph id="1" equiv="INTERPOLATION" disp="{{name}}"/> <ph id="0" equiv="ICU" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/></target>
       </segment>
     </unit>
     <unit id="2955832262925887316">
@@ -41,8 +45,9 @@
         <note category="location">src/app/app.component.html:37</note>
         <note category="location">src/app/app.component.html:46</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</source>
+        <target>{VAR_SELECT, select, male {kungs} female {kundze} other {}}</target>
       </segment>
     </unit>
     <unit id="6984380855335682859">
@@ -50,16 +55,18 @@
         <note category="location">src/app/app.component.html:43,47</note>
         <note category="description">Info about last updated time and author</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>Updated: <ph id="0" equiv="ICU" disp="{minutes, plural,     =0 {just now}     =1 {one minute ago}     other {{{minutes}} minutes ago }}"/> by <ph id="1" equiv="ICU_1" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="2" equiv="INTERPOLATION_1" disp="{{name}}"/> </source>
+        <target><ph id="1" equiv="ICU_1" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/><ph id="2" equiv="INTERPOLATION_1" disp="{{name}}"/> ir atjaunojis <ph id="0" equiv="ICU" disp="{minutes, plural,     =0 {just now}     =1 {one minute ago}     other {{{minutes}} minutes ago }}"/> </target>
       </segment>
     </unit>
     <unit id="5427460296173081035">
       <notes>
         <note category="location">src/app/app.component.html:43,46</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago }}</source>
+        <target>{VAR_PLURAL, plural, zero {} one {<ph id="0" equiv="INTERPOLATION"/> minutes ago } =0 {tikko} =1 {vienu minuti atpakaļ} other {<ph id="0" equiv="INTERPOLATION"/> minutes atpakaļ }}</target>
       </segment>
     </unit>
     <unit id="2845920688654430205">
@@ -67,8 +74,9 @@
         <note category="location">src/app/app.component.html:54</note>
         <note category="description">Image title</note>
       </notes>
-      <segment>
+      <segment state="final">
         <source>Image with attributes</source>
+        <target>Attēls ar atribūtiem</target>
       </segment>
     </unit>
   </file>
