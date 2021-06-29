@@ -13,3 +13,14 @@
   top: 20px;
   right: 20px;
 }
+
+mat-list {
+  mat-list-item {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.context-actions {
+  display: flex;
+}

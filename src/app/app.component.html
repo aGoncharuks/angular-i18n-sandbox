@@ -12,18 +12,47 @@
 <mat-list>
   <div mat-subheader>Simple text interpolation</div>
   <mat-list-item>
-    <div i18n="Navigation section header on home page">Resources</div>
+    <div i18n="Simple text example">This is an example of simple text</div>
   </mat-list-item>
   <mat-divider></mat-divider>
-	<div mat-subheader>Simple text interpolation</div>
+
+	<div mat-subheader>Plural form</div>
 	<mat-list-item>
-		<div i18n="Navigation section sub-header on home page">Here are some links to help you get started:</div>
+		<div class="context-actions">
+			<button mat-button (click)="incrementMinutes(1)">+</button>
+			<button mat-button (click)="incrementMinutes(-1)">-</button>
+		</div>
+	<div i18n="Info about last updated time">Updated {minutes, plural, =0 {just now} =1 {one minute ago} other
+					{{{minutes}} minutes ago}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
-	<div mat-subheader>Simple text interpolation</div>
+
+	<div mat-subheader>Different text based on condition</div>
 	<mat-list-item>
-		<div i18n="Documentation section header">CLI Documentation</div>
+		<div class="context-actions">
+			<button mat-button (click)="selectGender('male')">&#9794;</button>
+			<button mat-button (click)="selectGender('female')">&#9792;</button>
+			<button mat-button (click)="selectGender('other')">&#9895;</button>
+		</div>
+		<div i18n="Info about author">The author is {gender, select, male {Mr.} female {Ms.} other {Mx.}} {{name}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Plural form and conditional text in one sentence</div>
+	<mat-list-item>
+		<div i18n="Info about last updated time and author">Updated: {minutes, plural,
+		  =0 {just now}
+		  =1 {one minute ago}
+		  other {{{minutes}} minutes ago }} by {gender, select, male {Mr.} female {Ms.} other {Mx.}} {{name}}
+		</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Image with attirbutes</div>
+	<mat-list-item>
+		<img src="https://via.placeholder.com/100x50" width="100px" height="50px" i18n-title="Image title"
+		     title="Image with attributes"
+		     alt="Image placeholder"/>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 </mat-list>
-

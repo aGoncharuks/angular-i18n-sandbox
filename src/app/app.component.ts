@@ -10,6 +10,9 @@ import { LanguageService } from './providers/language.service';
 })
 export class AppComponent {
 	locales = this.languageService.locales;
+	minutes: number = 0;
+	gender: 'male' | 'female' | 'other' = 'male';
+	name: string = 'John Smith';
 	
 	constructor(private languageService: LanguageService) {
 	}
@@ -20,5 +23,13 @@ export class AppComponent {
 	
 	changeLocale({value: locale}: MatSelectChange): void {
 		this.languageService.navigateToNewLocale(locale);
+	}
+	
+	incrementMinutes(value: number): void {
+		this.minutes += value;
+	}
+	
+	selectGender(gender: 'male' | 'female' | 'other'): void {
+		this.gender = gender;
 	}
 }

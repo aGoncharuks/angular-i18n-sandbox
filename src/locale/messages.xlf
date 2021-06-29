@@ -2,37 +2,74 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="2446117790692479672" datatype="html">
-        <source>Resources</source>
+      <trans-unit id="7542152339795391976" datatype="html">
+        <source>This is an example of simple text</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">356</context>
+          <context context-type="linenumber">15</context>
         </context-group>
-        <note priority="1" from="description">Navigation section header on home page</note>
+        <note priority="1" from="description">Simple text example</note>
       </trans-unit>
-      <trans-unit id="4274046789977098738" datatype="html">
-        <source>Here are some links to help you get started:</source>
+      <trans-unit id="4606963464835766483" datatype="html">
+        <source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other
+					{{{minutes}} minutes ago}}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">357</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
-        <note priority="1" from="description">Navigation section sub-header on home page</note>
+        <note priority="1" from="description">Info about last updated time</note>
       </trans-unit>
-      <trans-unit id="5474830355021798286" datatype="html">
-        <source>CLI Documentation</source>
+      <trans-unit id="2002272803511843863" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">370</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
-        <note priority="1" from="description">Documentation section header</note>
       </trans-unit>
-      <trans-unit id="2869948436884924902" datatype="html">
-        <source>Next Steps</source>
+      <trans-unit id="5407546478523663407" datatype="html">
+        <source>The author is <x id="ICU" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION" equiv-text="{{name}}"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">386</context>
+          <context context-type="linenumber">37</context>
         </context-group>
-        <note priority="1" from="description">Next steps section header</note>
+        <note priority="1" from="description">Info about author</note>
+      </trans-unit>
+      <trans-unit id="2955832262925887316" datatype="html">
+        <source>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6984380855335682859" datatype="html">
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural,
+		  =0 {just now}
+		  =1 {one minute ago}
+		  other {{{minutes}} minutes ago }}"/> by <x id="ICU_1" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION_1" equiv-text="{{name}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43,47</context>
+        </context-group>
+        <note priority="1" from="description">Info about last updated time and author</note>
+      </trans-unit>
+      <trans-unit id="5427460296173081035" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago }}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">43,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2845920688654430205" datatype="html">
+        <source>Image with attributes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">Image title</note>
       </trans-unit>
     </body>
   </file>
