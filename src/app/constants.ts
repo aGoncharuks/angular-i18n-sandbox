@@ -4,17 +4,17 @@ export const LOCALES: Locale[] = [
 	{
 		displayName: 'English',
 		localeId: 'en',
-		rootUrl: 'http://localhost:4200'
+		rootUrl: 'http://localhost:5200'
 	},
 	{
 		displayName: 'Latvian',
 		localeId: 'lv',
-		rootUrl: 'http://localhost:4300'
+		rootUrl: 'http://localhost:5300'
 	},
 	{
 		displayName: 'Chinese',
 		localeId: 'zh',
-		rootUrl: 'http://localhost:4400'
+		rootUrl: 'http://localhost:5400'
 	}
 ]
 

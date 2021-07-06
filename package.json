@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=4200",
-    "start:lv": "ng serve --configuration development,lv --port=4300",
-    "start:zh": "ng serve --configuration development,zh --port=4400",
+    "start": "ng serve --port=5200",
+    "start:lv": "ng serve --configuration development,lv --port=5300",
+    "start:zh": "ng serve --configuration development,zh --port=5400",
     "start:all": "concurrently \" npm run start \" \" npm run start:lv \" \" npm run start:zh \"",
     "build": "ng build --localize",
     "watch": "ng build --watch --configuration development",
