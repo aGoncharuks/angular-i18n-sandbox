@@ -9,7 +9,7 @@
     "start:all": "concurrently \" npm run start \" \" npm run start:lv \" \" npm run start:zh \"",
     "build": "ng build --localize",
     "watch": "ng build --watch --configuration development",
-    "extract-i18n": "ng extract-i18n --output-path=src/locale --format=xlf2"
+    "extract-i18n": "ng extract-i18n --output-path=src/locale --format=xlf"
   },
   "private": true,
   "dependencies": {
