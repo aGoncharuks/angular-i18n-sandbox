@@ -1,83 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="zh-CN">
-  <file id="ngi18n" original="ng.template">
-    <unit id="7542152339795391976">
-      <notes>
-        <note category="location">src/app/app.component.html:15</note>
-        <note category="description">Simple text example</note>
-      </notes>
-      <segment state="final">
-        <source>This is an example of simple text</source>
-        <target>这是一个简单文本的例子</target>
-      </segment>
-    </unit>
-    <unit id="4606963464835766483">
-      <notes>
-        <note category="location">src/app/app.component.html:25,26</note>
-        <note category="description">Info about last updated time</note>
-      </notes>
-      <segment state="initial">
-        <source>Updated <ph id="0" equiv="ICU" disp="{minutes, plural, =0 {just now} =1 {one minute ago} other      {{{minutes}} minutes ago}}"/></source>
-        <target>Updated <ph id="0" equiv="ICU" disp="{minutes, plural, =0 {just now} =1 {one minute ago} other      {{{minutes}} minutes ago}}"/></target>
-      </segment>
-    </unit>
-    <unit id="2002272803511843863">
-      <notes>
-        <note category="location">src/app/app.component.html:25,26</note>
-      </notes>
-      <segment state="initial">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago}}</source>
-        <target>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago}}</target>
-      </segment>
-    </unit>
-    <unit id="5407546478523663407">
-      <notes>
-        <note category="location">src/app/app.component.html:37</note>
-        <note category="description">Info about author</note>
-      </notes>
-      <segment state="initial">
-        <source>The author is <ph id="0" equiv="ICU" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="1" equiv="INTERPOLATION" disp="{{name}}"/></source>
-        <target>The author is <ph id="0" equiv="ICU" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="1" equiv="INTERPOLATION" disp="{{name}}"/></target>
-      </segment>
-    </unit>
-    <unit id="2955832262925887316">
-      <notes>
-        <note category="location">src/app/app.component.html:37</note>
-        <note category="location">src/app/app.component.html:46</note>
-      </notes>
-      <segment state="initial">
-        <source>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</source>
-        <target>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</target>
-      </segment>
-    </unit>
-    <unit id="6984380855335682859">
-      <notes>
-        <note category="location">src/app/app.component.html:43,47</note>
-        <note category="description">Info about last updated time and author</note>
-      </notes>
-      <segment state="initial">
-        <source>Updated: <ph id="0" equiv="ICU" disp="{minutes, plural,     =0 {just now}     =1 {one minute ago}     other {{{minutes}} minutes ago }}"/> by <ph id="1" equiv="ICU_1" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="2" equiv="INTERPOLATION_1" disp="{{name}}"/> </source>
-        <target>Updated: <ph id="0" equiv="ICU" disp="{minutes, plural,     =0 {just now}     =1 {one minute ago}     other {{{minutes}} minutes ago }}"/> by <ph id="1" equiv="ICU_1" disp="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <ph id="2" equiv="INTERPOLATION_1" disp="{{name}}"/> </target>
-      </segment>
-    </unit>
-    <unit id="5427460296173081035">
-      <notes>
-        <note category="location">src/app/app.component.html:43,46</note>
-      </notes>
-      <segment state="initial">
-        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago }}</source>
-        <target>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<ph id="0" equiv="INTERPOLATION"/> minutes ago }}</target>
-      </segment>
-    </unit>
-    <unit id="2845920688654430205">
-      <notes>
-        <note category="location">src/app/app.component.html:54</note>
-        <note category="description">Image title</note>
-      </notes>
-      <segment state="translated">
-        <source>Image with attributes</source>
-        <target>带属性的图像</target>
-      </segment>
-    </unit>
-  </file>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+	<file original="ng2.template" datatype="plaintext" xml:space="preserve" source-language="en-US" target-language="zh-CN">
+		<header>
+			<tool tool-id="lokalise.com" tool-name="Lokalise"/>
+		</header>
+		<body>
+			<trans-unit id="7542152339795391976" datatype="html">
+				<source>This is an example of simple text</source>
+				<target>这是一个简单文本的例子</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">15</context>
+				</context-group>
+				<note priority="1" from="description">Simple text example</note>
+			</trans-unit>
+			<trans-unit id="4606963464835766483" datatype="html">
+				<source>Updated <x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other
+					{{{minutes}} minutes ago}}"/></source>
+				<target>更新<x id="ICU" equiv-text="{minutes, plural, =0 {just now} =1 {one minute ago} other
+					{{{minutes}} minutes ago}}"/></target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">25,26</context>
+				</context-group>
+				<note priority="1" from="description">Info about last updated time</note>
+			</trans-unit>
+			<trans-unit id="2002272803511843863" datatype="html">
+				<source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago}}</source>
+				<target>{VAR_PLURAL，复数，=0 {刚才}=1 {1分钟前}其他 {<x id="INTERPOLATION"/> 分钟前}}</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">25,26</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5407546478523663407" datatype="html">
+				<source>The author is <x id="ICU" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION" equiv-text="{{name}}"/></source>
+				<target>作者是<x id="ICU" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION" equiv-text="{{name}}"/></target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">37</context>
+				</context-group>
+				<note priority="1" from="description">Info about author</note>
+			</trans-unit>
+			<trans-unit id="2955832262925887316" datatype="html">
+				<source>{VAR_SELECT, select, male {Mr.} female {Ms.} other {Mx.}}</source>
+				<target>{VAR_SELECT, select, male {先生} female {女士} other {}}</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">37</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">46</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6984380855335682859" datatype="html">
+				<source>Updated: <x id="ICU" equiv-text="{minutes, plural,
+		  =0 {just now}
+		  =1 {one minute ago}
+		  other {{{minutes}} minutes ago }}"/> by <x id="ICU_1" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION_1" equiv-text="{{name}}"/></source>
+				<target>更新: <x id="ICU" equiv-text="{minutes, plural,
+		  =0 {just now}
+		  =1 {one minute ago}
+		  other {{{minutes}} minutes ago }}"/> by <x id="ICU_1" equiv-text="{gender, select, male {Mr.} female {Ms.} other {Mx.}}"/> <x id="INTERPOLATION_1" equiv-text="{{name}}"/></target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">43,47</context>
+				</context-group>
+				<note priority="1" from="description">Info about last updated time and author</note>
+			</trans-unit>
+			<trans-unit id="5427460296173081035" datatype="html">
+				<source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION"/> minutes ago }}</source>
+				<target>{VAR_PLURAL，复数，=0 {刚才}=1 {一分钟前}其他 {<x id="INTERPOLATION"/> 分钟前}}</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">43,46</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2845920688654430205" datatype="html">
+				<source>Image with attributes</source>
+				<target>带有属性的图像</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/app.component.html</context>
+					<context context-type="linenumber">54</context>
+				</context-group>
+				<note priority="1" from="description">Image title</note>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>
