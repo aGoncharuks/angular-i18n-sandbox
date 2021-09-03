@@ -55,4 +55,52 @@
 		     alt="Image placeholder"/>
 	</mat-list-item>
 	<mat-divider></mat-divider>
+
+	<div mat-subheader>Date in full format displayed with pipe</div>
+	<mat-list-item>
+		<div>{{today | date : 'full' }}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Date in full format created with pipe constructor</div>
+	<mat-list-item>
+		<div>{{todayWithPipeConstructor}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Currency displayed with pipe</div>
+	<mat-list-item>
+		<div>{{amount | currency}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Currency created with pipe constructor</div>
+	<mat-list-item>
+		<div>{{amountWithPipeConstructor}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Number displayed with decimal pipe </div>
+	<mat-list-item>
+		<div>{{number | number}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Number displayed with decimal pipe constructor </div>
+	<mat-list-item>
+		<div>{{numberWithPipeConstructor}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Number displayed with percent pipe </div>
+	<mat-list-item>
+		<div>{{numberToPercent | percent}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div mat-subheader>Number displayed with percent pipe constructor </div>
+	<mat-list-item>
+		<div>{{numberToPercentWithPipeConstructor}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
 </mat-list>

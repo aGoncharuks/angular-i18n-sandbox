@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
@@ -23,7 +23,9 @@ import { AppComponent } from './app.component';
 		MatListModule,
 		MatButtonModule
 	],
-  providers: [],
+  providers: [
+	  { provide: DEFAULT_CURRENCY_CODE, useValue: 'USD' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
