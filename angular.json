@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "defaultCollection": "@angular-eslint/schematics"
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -57,7 +58,7 @@
               "src/styles.scss"
             ],
             "scripts": []
-					},
+          },
           "configurations": {
             "production": {
               "budgets": [
@@ -88,30 +89,34 @@
               "sourceMap": true,
               "namedChunks": true
             },
-						"lv": {
-							"localize": ["lv"]
-						},
-						"zh": {
-							"localize": ["zh-Hans"]
-						}
+            "lv": {
+              "localize": [
+                "lv"
+              ]
+            },
+            "zh": {
+              "localize": [
+                "zh-Hans"
+              ]
+            }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-					"configurations": {
+          "configurations": {
             "production": {
               "browserTarget": "angular-i18n-sandbox:build:production"
             },
             "development": {
               "browserTarget": "angular-i18n-sandbox:build:development"
             },
-						"lv": {
-							"browserTarget": "angular-i18n-sandbox:build:lv"
-						},
-						"zh": {
-							"browserTarget": "angular-i18n-sandbox:build:zh"
-						}
+            "lv": {
+              "browserTarget": "angular-i18n-sandbox:build:lv"
+            },
+            "zh": {
+              "browserTarget": "angular-i18n-sandbox:build:zh"
+            }
           },
           "defaultConfiguration": "development"
         },
@@ -120,25 +125,34 @@
           "options": {
             "browserTarget": "angular-i18n-sandbox:build"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       },
-			"i18n": {
-				"sourceLocale": {
-					"code": "en-US",
-					"baseHref": ""
-				},
-				"locales": {
-					"lv": {
-						"translation": "src/locale/lv/messages.xlf",
-						"baseHref": ""
-					},
-					"zh-Hans": {
-						"translation": "src/locale/zh/messages.xlf",
-						"baseHref": ""
-					}
-				}
-			}
-		}
+      "i18n": {
+        "sourceLocale": {
+          "code": "en-US",
+          "baseHref": ""
+        },
+        "locales": {
+          "lv": {
+            "translation": "src/locale/lv/messages.xlf",
+            "baseHref": ""
+          },
+          "zh-Hans": {
+            "translation": "src/locale/zh/messages.xlf",
+            "baseHref": ""
+          }
+        }
+      }
+    }
   },
   "defaultProject": "angular-i18n-sandbox"
 }
