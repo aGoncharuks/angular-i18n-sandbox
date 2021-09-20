@@ -1,8 +1,8 @@
 <form [formGroup]="form">
 	<mat-form-field class="language-select" appearance="fill">
-		<mat-label>Language</mat-label>
+		<mat-label i18n>Language</mat-label>
 		<mat-select formControlName="locale" (selectionChange)="changeLocale($event)">
-			<mat-option *ngFor="let locale of locales" [value]="locale">
+			<mat-option i18n *ngFor="let locale of locales" [value]="locale">
 				{{locale.displayName}}
 			</mat-option>
 		</mat-select>
@@ -10,13 +10,13 @@
 </form>
 
 <mat-list>
-  <div mat-subheader>Simple text interpolation</div>
+  <div i18n mat-subheader>Simple text interpolation</div>
   <mat-list-item>
     <div i18n="Simple text example">This is an example of simple text</div>
   </mat-list-item>
   <mat-divider></mat-divider>
 
-	<div mat-subheader>Plural form</div>
+	<div i18n mat-subheader>Plural form</div>
 	<mat-list-item>
 		<div class="context-actions">
 			<button mat-button (click)="incrementMinutes(1)">+</button>
@@ -27,7 +27,7 @@
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Different text based on condition</div>
+	<div i18n mat-subheader>Different text based on condition</div>
 	<mat-list-item>
 		<div class="context-actions">
 			<button mat-button (click)="selectGender('male')">&#9794;</button>
@@ -38,7 +38,7 @@
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Plural form and conditional text in one sentence</div>
+	<div i18n mat-subheader>Plural form and conditional text in one sentence</div>
 	<mat-list-item>
 		<div i18n="Info about last updated time and author">Updated: {minutes, plural,
 		  =0 {just now}
@@ -48,59 +48,77 @@
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Image with attirbutes</div>
+	<div i18n mat-subheader>Image with attirbutes</div>
 	<mat-list-item>
 		<img src="https://via.placeholder.com/100x50" width="100px" height="50px" i18n-title="Image title"
 		     title="Image with attributes"
-		     alt="Image placeholder"/>
+		     alt="Image placeholder" i18n-alt/>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Date in full format displayed with pipe</div>
+	<div i18n mat-subheader>Date in full format displayed with pipe</div>
 	<mat-list-item>
-		<div>{{today | date : 'full' }}</div>
+		<div i18n>{{today | date : 'full' }}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Date in full format created with pipe constructor</div>
+	<div i18n mat-subheader>Date in full format created with pipe constructor</div>
 	<mat-list-item>
-		<div>{{todayWithPipeConstructor}}</div>
+		<div i18n>{{todayWithPipeConstructor}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Currency displayed with pipe</div>
+	<div i18n mat-subheader>Currency displayed with pipe</div>
 	<mat-list-item>
-		<div>{{amount | currency}}</div>
+		<div i18n>{{amount | currency}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Currency created with pipe constructor</div>
+	<div i18n mat-subheader>Currency created with pipe constructor</div>
 	<mat-list-item>
-		<div>{{amountWithPipeConstructor}}</div>
+		<div i18n>{{amountWithPipeConstructor}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Number displayed with decimal pipe </div>
+	<div i18n mat-subheader>Number displayed with decimal pipe </div>
 	<mat-list-item>
-		<div>{{number | number}}</div>
+		<div i18n>{{number | number}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Number displayed with decimal pipe constructor </div>
+	<div i18n mat-subheader>Number displayed with decimal pipe constructor </div>
 	<mat-list-item>
-		<div>{{numberWithPipeConstructor}}</div>
+		<div i18n>{{numberWithPipeConstructor}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Number displayed with percent pipe </div>
+	<div i18n mat-subheader>Number displayed with percent pipe </div>
 	<mat-list-item>
-		<div>{{numberToPercent | percent}}</div>
+		<div i18n>{{numberToPercent | percent}}</div>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 
-	<div mat-subheader>Number displayed with percent pipe constructor </div>
+	<div i18n mat-subheader>Number displayed with percent pipe constructor </div>
 	<mat-list-item>
-		<div>{{numberToPercentWithPipeConstructor}}</div>
+		<div i18n>{{numberToPercentWithPipeConstructor}}</div>
+	</mat-list-item>
+
+	<div i18n mat-subheader>Number displayed with percent pipe constructor </div>
+	<mat-list-item>
+		<div i18n>text</div>
+		<div i18n>{{name}}</div>
+		<div i18n>text {{name}}</div>
+		<div>{{name}} 5</div>
+		<div>{{name}}!</div>
+		<div>{{name}}?</div>
+		<div>{{name}}-{{name}}</div>
+	</mat-list-item>
+	<mat-divider></mat-divider>
+
+	<div i18n mat-subheader>Test component with inputs </div>
+	<mat-list-item>
+		<app-test infoText="Text One" i18n-infoText
+		          infoTextSize="medium"></app-test>
 	</mat-list-item>
 	<mat-divider></mat-divider>
 </mat-list>
